@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+html,
+body,
+#root {
+  height: 100%;
+}
+.App {
+  font-family: "Roboto", sans-serif;
+}
+
+.master-layout {
+ height: 90vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.Header {
+  height: 5vh;
+  background-color: rgb(68, 195, 238);
+}
+
+.Footer {
+  height: 5vh !important;
+  background-color: rgb(13, 45, 56);
+}
+
+.login-form {
+  width: 50% !important;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-control::placeholder {
+  color: #f1f1f1;
+}
+
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+  color: rgb(0, 204, 34) !important;
+}
+
+
+
+@media (max-width: 767px) {
+  .login-form {
+    width: 100% !important;
+  }
+}
